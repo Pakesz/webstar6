@@ -1,21 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package webstar6;
 
-/**
- *
- * @author asus
- */
+
 public class Webstar6 {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        Medve m = new Medve("Maci","Méz");
+        System.out.println(m.getNev());
+        m.setNev("Brumi");
+        System.out.println(m.getNev());
     }
     
 }
