@@ -45,7 +45,29 @@ public class Medve {
     public void setNev(String nev) {
         this.nev = nev;
     }
+    
+    public void setKedvencKaja(String kaja){
+        this.kedvencKaja = kaja;
+    }
+    
+    // Boolean
+    public void szelid(){
+        this.szelid = true;
+    }
+    
+    public void vad(){
+        this.szelid = false;
+    }
+    
+    // korlátozott setter
+    
+    public void szuletesnap(){
+        this.kor++;
+    }
 
     //saját metódus
     
+    public void morog(){
+        System.out.println("grgrgr");
+    }
 }
