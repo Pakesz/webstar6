@@ -6,9 +6,11 @@ public class Medve {
     // láthatóság, adattípus, tulajdonságnév
     private String nev;
     private Integer kor; // int semmi = 0, Integer semmi = null;
+    private Boolean oshonos;
+    
     private String kedvencKaja;
     private Boolean szelid;
-    
+    private Boolean uszas;
     //konstruktor
     public Medve() {
     }
@@ -37,6 +39,15 @@ public class Medve {
         return this.szelid;
     }
 
+    public Boolean getOshonos() {
+        return oshonos;
+    }
+
+    public Boolean getUszas() {
+        return uszas;
+    }
+    
+    
     
     //setter
     
@@ -57,6 +68,22 @@ public class Medve {
     
     public void vad(){
         this.szelid = false;
+    }
+    
+    public void oshonos(){
+        this.oshonos = true;
+    }
+    
+    public void idegen(){
+        this.oshonos = false;
+    }
+    
+    public void uszik(){
+        this.uszas = true;
+    }
+    
+    public void nemUszik(){
+        this.uszas = false;
     }
     
     // korlátozott setter
