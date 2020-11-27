@@ -1,46 +1,29 @@
 
 package webstar6;
 
-public class Medve {
+public class Medve extends Emlos{
     // Tulajdonságok rögzítése
     // láthatóság, adattípus, tulajdonságnév
-    private String nev;
-    private Integer kor; // int semmi = 0, Integer semmi = null;
-    private Boolean oshonos;
-    
-    private String kedvencKaja;
+  private String kedvencKaja;
     private Boolean szelid;
     private Boolean uszas;
     //konstruktor
     public Medve() {
+        super();
     }
     
     public Medve(String nev, String kedvencKaja) {
-        this.nev = nev;
+        super(nev,1,false);
         this.kedvencKaja = kedvencKaja;
-        this.kor=1;
         this.szelid= true;
     }
     //getter
-    
-    public String getNev() {
-        return this.nev;
-    }
-
-    public Integer getKor() {
-        return this.kor;
-    }
-
     public String getKedvencKaja() {
         return this.kedvencKaja;
     }
 
     public Boolean getSzelid() {
         return this.szelid;
-    }
-
-    public Boolean getOshonos() {
-        return oshonos;
     }
 
     public Boolean getUszas() {
@@ -50,12 +33,6 @@ public class Medve {
     
     
     //setter
-    
-    
-
-    public void setNev(String nev) {
-        this.nev = nev;
-    }
     
     public void setKedvencKaja(String kaja){
         this.kedvencKaja = kaja;
@@ -70,14 +47,6 @@ public class Medve {
         this.szelid = false;
     }
     
-    public void oshonos(){
-        this.oshonos = true;
-    }
-    
-    public void idegen(){
-        this.oshonos = false;
-    }
-    
     public void uszik(){
         this.uszas = true;
     }
@@ -88,13 +57,8 @@ public class Medve {
     
     // korlátozott setter
     
-    public void szuletesnap(){
-        this.kor++;
-    }
 
     //saját metódus
     
-    public void morog(){
-        System.out.println("grgrgr");
-    }
+    
 }
